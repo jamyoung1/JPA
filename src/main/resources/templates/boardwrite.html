@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 작성</title>
+</head>
+<style>
+    .layout {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .layout  input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .layout  textarea {
+        width: 100%;
+        margin-top: 20px;
+        min-height: 300px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <form action="/board/writepro" method="post" enctype="multipart/form-data">
+    <h2>게시물 작성</h2>
+    <div class="layout">
+        <input type="text" name="title">
+        <textarea name="content"></textarea>
+        <input type="file" name="file">
+        <button type="submit">작성</button>
+    </div>
+    </form>
+</body>
+</html>
